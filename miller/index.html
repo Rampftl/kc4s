@@ -508,6 +508,18 @@
                   tags__category: 'writing'
                 }
               }],
+              // to be improved
+              availableRoutes: ['writing','tags', 'specials'],
+              specials: ['no-poverty','zero-hunger','good-health-well-being','quality-education','gender-equality','clean-water-sanitation','affordable-clean-energy','decent-work-economic-growth','industry-innovation-infrastructure','reduced-inequality','sustainable-cities-communities','responsible-consumption-production','climate-actions','life-below-water','life-on-land','piece-justice-strong-institutions','partnerships-for-the-goals'
+              ].map(function(d) {
+                return {
+                  slug: d,
+                  url: '/sdg/'+d,
+                  filters: {
+                    tags__slug: d
+                  }
+                }
+              }),
               status: [
                 {
                   slug: 'draft',
@@ -526,8 +538,8 @@
               ],
               writing: [// articles type
                 {
-                  slug: 'report',
-                  url: '/report',
+                  slug: 'reports',
+                  url: '/reports',
                   orderby: 'data__issue,-date'
                 },
                 {
@@ -567,51 +579,17 @@
                 
                 
               ],
-              tags:[
-                {
-                  slug: 'government',
-                  url: '/government',
-                  filters: {
-                    tags__slug: 'government'
-                  }
-                },
-                {
-                  slug: 'civil-society',
-                  url: '/civil-society',
-                  filters: {
-                    tags__slug: 'civil-society'
-                  }
-                },
-                {
-                  slug: 'municipality',
-                  url: '/municipality',
-                  filters: {
-                    tags__slug: 'municipality'
-                  }
-                },
-                {
-                  slug: 'research-organisation',
-                  url: '/research-organisation',
-                  filters: {
-                    tags__slug: 'civil-society'
-                  }
-                },
-                {
-                  slug: 'school',
-                  url: '/school',
-                  filters: {
-                    tags__slug: 'school'
-                  }
-                },
-                {
-                  slug: 'enterprise',
-                  url: '/enterprise',
-                  filters: {
-                    tags__slug: 'enterprise'
-                  }
-                },
 
-              ]
+              tags:['government', 'civil-society', 'municipality', 'research-organisation', 'school', 'enterprise'].map(function(d) {
+                return {
+                  slug: d,
+                  url: '/'+d,
+                  filters: {
+                    tags__slug: d
+                  }
+                }
+              }),
+              
             },
 
             reviews: [
