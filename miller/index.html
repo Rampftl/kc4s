@@ -60,7 +60,6 @@
             <!-- <li class="active"><a href="#">home <span class="sr-only">(current)</span></a></li> -->
             <li ui-sref-active="active"><a href ui-sref='page({name:"about"})' translate="headline.about"></a></li>
             <li ui-sref-active="active"><a href ui-sref='page({name:"people"})' translate="headline.people"></a></li>
-            <li ng-class="{active: (state.includes('publications') || state.includes('story') || state.includes('collection')) && !state.includes('me')}"><a href ui-sref='publications.all' translate="headline.publications"></a></li>
             <!-- <li ui-sref-active="active"><a href ui-sref='authors' translate="headline.authors"></a></li> -->
             <li ng-class="{active: state.includes('blog')}"><a ui-sref="blog.all" translate="state.blog.all.title"></a></li>
 
