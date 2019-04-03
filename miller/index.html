@@ -252,7 +252,7 @@
 
 
       settings.session_key = "{{ request.session.session_key }}";
-
+      var navh = _is_mobile? 70: 100;
       var _windox  = angular.element(window),
           _offsetables = {
             navbar: $('#navbar'),
@@ -262,18 +262,18 @@
             // 'writing-tools': $('#writing-tools')
           },
           _is_mobile = _windox.width() < 768,
-          _navbar_offset = _is_mobile? 70: 100,
+          _navbar_offset = navh,
           st,
           windowHeight,
           windowWidth,
-          floatinglimit = _is_mobile? 70:100,
+          floatinglimit = navh,
           isBelowFloating = false;
 
       _windox.on('resize', function(){
         windowHeight = _windox.height();
         windowWidth = _windox.width();
         _is_mobile =  windowWidth < 768;
-        floatinglimit = _is_mobile? 70:100;
+        floatinglimit = navh;
 
         evaluateFloating();
       })
@@ -412,7 +412,7 @@
 
               {
                 label: 'SDG',
-                relevance: 'secondary',
+                relevance: 'primary',
                 filters:  {
                   category: 'SDG'
                 },
