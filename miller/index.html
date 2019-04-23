@@ -85,6 +85,9 @@
 
 
           <ul style='margin-left: 10px' class="nav navbar-nav navbar-right">
+            <li ng-show="!cart.isEmpty()">
+              <a ng-click="openDownloadCartModal()" class="force-pointer">(<span ng-bind="cart.count()"></span>) selected articles</a>
+            </li>
             {% if user.is_authenticated %}
 
             <li class="dropdown">
