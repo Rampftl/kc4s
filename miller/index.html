@@ -85,8 +85,8 @@
 
 
           <ul style='margin-left: 10px' class="nav navbar-nav navbar-right">
-            <li ng-show="!cart.isEmpty()">
-              <a ng-click="openDownloadCartModal()" class="force-pointer">(<span ng-bind="cart.count()"></span>) selected articles</a>
+            <li ng-if="!cart.isEmpty()" ng-cloak>
+              <a ng-click="openDownloadCartModal()" class="force-pointer">(<span ng-bind="cart.count()"> </span>) download article<span ng-if="cart.count() > 1">s</span></a>
             </li>
             {% if user.is_authenticated %}
 
