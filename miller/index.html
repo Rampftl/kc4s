@@ -18,7 +18,7 @@
         </div>
         <div class='col-sm-12'>
           <ul class="nav navbar-nav">
-            <li ui-sref-active="active"><a href ui-sref='index' translate='footer.home'></a>
+            <li ui-sref-active="active"><a href="/" translate='footer.home'></a>
             </li>
             <li ui-sref-active="active"><a href ui-sref='page({name:"terms-of-use"})' translate='footer.termsofservice'></a>
             </li>
@@ -42,7 +42,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class='navbar-brand' id="logo">
-            <a ui-sref='index'>
+            <a ui-sref="publications.all">
               <img src='{% static "/images/meng-aktioun-logo.jpg" %}'>
             </a>
           </div>
@@ -60,7 +60,6 @@
             <!-- <li class="active"><a href="#">home <span class="sr-only">(current)</span></a></li> -->
             <li ui-sref-active="active"><a href ui-sref='page({name:"about"})' translate="headline.about"></a></li>
             <li ui-sref-active="active"><a href ui-sref='page({name:"people"})' translate="headline.people"></a></li>
-            <li ng-class="{active: (state.includes('publications') || state.includes('story') || state.includes('collection')) && !state.includes('me')}"><a href ui-sref='publications.all' translate="headline.publications"></a></li>
             <!-- <li ui-sref-active="active"><a href ui-sref='authors' translate="headline.authors"></a></li> -->
             <li ng-class="{active: state.includes('blog')}"><a ui-sref="blog.all" translate="state.blog.all.title"></a></li>
 
@@ -253,7 +252,7 @@
 
 
       settings.session_key = "{{ request.session.session_key }}";
-
+      var navh = _is_mobile? 70: 100;
       var _windox  = angular.element(window),
           _offsetables = {
             navbar: $('#navbar'),
@@ -263,18 +262,18 @@
             // 'writing-tools': $('#writing-tools')
           },
           _is_mobile = _windox.width() < 768,
-          _navbar_offset = _is_mobile? 70: 100,
+          _navbar_offset = navh,
           st,
           windowHeight,
           windowWidth,
-          floatinglimit = _is_mobile? 70:100,
+          floatinglimit = navh,
           isBelowFloating = false;
 
       _windox.on('resize', function(){
         windowHeight = _windox.height();
         windowWidth = _windox.width();
         _is_mobile =  windowWidth < 768;
-        floatinglimit = _is_mobile? 70:100;
+        floatinglimit = navh;
 
         evaluateFloating();
       })
@@ -413,7 +412,7 @@
 
               {
                 label: 'SDG',
-                relevance: 'secondary',
+                relevance: 'primary',
                 filters:  {
                   category: 'SDG'
                 },
@@ -554,14 +553,14 @@
               status: [
                 {
                   slug: 'draft',
-                  url: '/draft',
+                  url: 'draft',
                   filters: {
                     status: 'draft'
                   }
                 },
                 {
                   slug: 'reviewdone',
-                  url: '/to-be-published',
+                  url: 'to-be-published',
                   filters: {
                     status: 'reviewdone'
                   }
