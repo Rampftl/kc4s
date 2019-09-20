@@ -92,7 +92,9 @@
               <ul class="dropdown-menu" role="menu">
 
                 <li ui-sref-active="active"><a ui-sref="draft" translate='write'></a></li>
-                <li ui-sref-active="active"><a ui-sref="upload" translate='upload'></a></li>
+
+                <!-- TODO: to uncomment, prov removed while the upload feature get fixed -->
+                <!-- <li ui-sref-active="active"><a ui-sref="upload" translate='upload'></a></li>-->
 
                 <li ui-sref-active="active" ng-repeat='author in user.profile.authors' style='border-top: 2px solid #d0d0d0;'>
                   <a ui-sref='author.publications.all({slug:author.slug})' translate='headline.your.writings'></a>
