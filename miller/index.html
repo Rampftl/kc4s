@@ -387,6 +387,17 @@
                 },
                 addFromAutocompleteOnly: false
               },
+              {
+                label: 'SDG',
+                relevance: 'primary',
+                filters:  {
+                  category: 'SDG'
+                },
+                lambda: {
+                  category: 'SDG'
+                },
+                addFromAutocompleteOnly: true
+              },
               {% if user.is_staff %}
               {
                 label: 'staff.drafts.tags.placeholder',
@@ -399,19 +410,6 @@
                 },
                 addFromAutocompleteOnly: true
               },
-
-
-              {
-                label: 'SDG',
-                relevance: 'primary',
-                filters:  {
-                  category: 'SDG'
-                },
-                lambda: {
-                  category: 'SDG'
-                },
-                addFromAutocompleteOnly: true
-              }
               {% endif %}
             ]
           },
