@@ -21,7 +21,7 @@
   {% endblock %}
   {% block navbar %}
     <nav id="navbar" class='navbar navbar-default bg-header' ng-init='showMenu=false' ng-class='{"show-menu":showMenu}' ng-controller='PulseCtrl'>
-      <div class="header-filter" style="position: absolute; height: 100%; background-color: #73bbc9;">
+      <div class="header-filter" style="position: absolute; height: 100%; background-color: #73bbc9; padding-right: 3px" >
         bla
       </div>
       <div style="position: relative; background: url('{% static "/images/backgrounds/header.svg" %}') no-repeat left top; background-size: cover; width:100%">
@@ -236,7 +236,6 @@
 
           </div>
         </div>
-      </div>
       </div>
     </nav>
   {% endblock %}
@@ -546,7 +545,7 @@
                 }
               }],
               // to be improved
-              availableRoutes: ['writing','tags', 'specials'],
+              availableRoutes: ['writing'],
               specials: [
                 'no-poverty',
                 'zero-hunger',
@@ -594,55 +593,45 @@
               ],
               writing: [// articles type
                 {
-                  slug: 'paper',
-                  url: '/paper',
+                  slug: 'food',
+                  url: '/food',
                   orderby: 'data__issue,-date'
                 },
                 {
-                  slug: 'reports',
-                  url: '/reports',
+                  slug: 'climate-and-energy',
+                  url: '/climate-and-energy',
                   orderby: 'data__issue,-date'
                 },
                 {
-                  slug: 'courses',
-                  url: '/courses',
+                  slug: 'nature-and-biodiversity',
+                  url: '/nature-and-biodiversity',
                   orderby: 'data__issue,-date'
                 },
                 {
-                  slug: 'challenges',
-                  url: '/challenges',
+                  slug: 'gardens',
+                  url: '/gardens',
                   orderby: 'data__issue,-date'
                 },
                 {
-                  slug: 'funding',
-                  url: '/funding',
+                  slug: 'alternative-culture',
+                  url: '/alternative-culture',
                   orderby: 'data__issue,-date'
                 },
                 {
-                  slug: 'expertise',
-                  url: '/expertise',
+                  slug: 'community',
+                  url: '/community',
                   orderby: 'data__issue,-date'
                 },
                 {
-                  slug: 'projects',
-                  url: '/projects',
+                  slug: 'zero-waste',
+                  url: '/zero-waste',
                   orderby: 'data__issue,-date'
                 },
                 {
-                  slug: 'products-services',
-                  url: '/products-services',
+                  slug: 'discover',
+                  url: '/discover',
                   orderby: 'data__issue,-date'
-                },
-                {
-                  slug: 'jobs',
-                  url: '/jobs',
-                  orderby: 'data__issue,-date'
-                },
-                {
-                  slug: 'glossary',
-                  url: '/glossary',
-                  orderby: 'data__issue,-date'
-                },
+                }
 
 
               ],

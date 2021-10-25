@@ -1,0 +1,90 @@
+[
+  {
+    "model": "miller.tag",
+    "pk": 1,
+    "fields": {
+      "name": "FOOD",
+      "slug": "food",
+      "category": "bibe-categories",
+      "status": "public",
+      "metadata": "\"{\\\"name\\\": {\\\"en_US\\\": \\\"FOOD\\\", \\\"fr_FR\\\": \\\"ALIMENTATION\\\",\\\"de_DE\\\": \\\"ERNÄHRUNG\\\"}}\""
+    }
+  },
+  {
+    "model": "miller.tag",
+    "pk": 2,
+    "fields": {
+      "name": "CLIMATE AND ENERGY",
+      "slug": "climate-and-energy",
+      "category": "blog",
+      "status": "public",
+      "metadata": "\"{\\\"name\\\": {\\\"en_US\\\": \\\"CLIMATE AND ENERGY\\\", \\\"fr_FR\\\": \\\"CLIMAT ET ENERGIE\\\", \\\"de_DE\\\": \\\"KLIMA UND ENERGIE\\\"}}\""
+    }
+  },
+  {
+    "model": "miller.tag",
+    "pk": 3,
+    "fields": {
+      "name": "NATURE AND BIODIVERSITY",
+      "slug": "nature-and-biodiversity",
+      "category": "bibe-categories",
+      "status": "public",
+      "metadata": "\"{\\\"name\\\": {\\\"en_US\\\": \\\"NATURE AND BIODIVERSITY\\\", \\\"fr_FR\\\": \\\"NATRUE ET BIODIVERSITE\\\", \\\"de_DE\\\": \\\"NATUR UND BIODIVERSITÄT\\\"}}\""
+    }
+  },
+  {
+    "model": "miller.tag",
+    "pk": 4,
+    "fields": {
+      "name": "GARDENS",
+      "slug": "gardens",
+      "category": "bibe-categories",
+      "status": "public",
+      "metadata": "\"{\\\"name\\\": {\\\"en_US\\\": \\\"GARDENS\\\", \\\"fr_FR\\\": \\\"JARDINS\\\", \\\"de_DE\\\": \\\"GÄRTEN\\\"}}\""
+    }
+  },
+  {
+    "model": "miller.tag",
+    "pk": 5,
+    "fields": {
+      "name": "ALTERNATIVE CULTURE",
+      "slug": "alternative-culture",
+      "category": "bibe-categories",
+      "status": "public",
+      "metadata": "\"{\\\"name\\\": {\\\"en_US\\\": \\\"ALTERNATIVE CULTURE\\\", \\\"fr_FR\\\": \\\"CULTURE ALTERNATIVE\\\", \\\"de_DE\\\": \\\"ALTERNATIVE KULTUR\\\"}}\""
+    }
+  },
+  {
+    "model": "miller.tag",
+    "pk": 6,
+    "fields": {
+      "name": "CUMMUNITY",
+      "slug": "community",
+      "category": "bibe-categories",
+      "status": "public",
+      "metadata": "\"{\\\"name\\\": {\\\"en_US\\\": \\\"CUMMUNITY\\\", \\\"fr_FR\\\": \\\"COMMUNAUTE\\\", \\\"de_DE\\\": \\\"GEMEINSCHAFT\\\"}}\""
+    }
+  },
+  {
+    "model": "miller.tag",
+    "pk": 7,
+    "fields": {
+      "name": "ZERO WASTE",
+      "slug": "zero-waste",
+      "category": "bibe-categories",
+      "status": "public",
+      "metadata": "\"{\\\"name\\\": {\\\"en_US\\\": \\\"ZERO WASTE\\\", \\\"fr_FR\\\": \\\"ZERO DECHETS\\\", \\\"de_DE\\\": \\\"NULL ABFALL\\\"}}\""
+    }
+  },
+  {
+    "model": "miller.tag",
+    "pk": 8,
+    "fields": {
+      "name": "DISCOVER",
+      "slug": "discover",
+      "category": "bibe-categories",
+      "status": "public",
+      "metadata": "\"{\\\"name\\\": {\\\"en_US\\\": \\\"DISCOVER\\\", \\\"fr_FR\\\": \\\"DECOUVRIR\\\", \\\"de_DE\\\": \\\"ENTDECKEN\\\"}}\""
+    }
+  }
+]
