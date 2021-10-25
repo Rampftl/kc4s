@@ -13,6 +13,8 @@
   "headline.about": "ABOUT",
   "headline.contact": "CONTACT",
   "headline.search": "SEARCH",
+  "button.add.project": "Add your project",
+  "header.map.label": "MAP",
   "state.authors.law.title": "Law",
   "field.label.title": "title", 
   "modals.addreview.field.reviewers.label": "add reviewer", 
