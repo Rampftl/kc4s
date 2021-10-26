@@ -7,7 +7,7 @@
       <div class="row">
         <div class='col-sm-12' style="background-color: #f26951">
           <div class="col-sm-8" style="height:80px;padding-top:20px" >
-            <div ui-sref-active="active" class="text-right"><a href ui-sref='page({name:"terms-of-use"})' translate='footer.termsofservice'></a>
+            <div ui-sref-active="active" class="text-right"><a class='footer' href ui-sref='page({name:"terms-of-use"})' translate='footer.termsofservice'></a>
             </div>
           </div>
           <div class="col-sm-3 text-right color-white" style="height:80px;padding-top:20px">BIBE@CELL.LU&nbsp;&nbsp;&nbsp;&nbsp;&copy; BIBE 2021</div>
@@ -18,9 +18,7 @@
   {% endblock %}
   {% block navbar %}
     <nav id="navbar" class='navbar navbar-default bg-header' ng-init='showMenu=false' ng-class='{"show-menu":showMenu}' ng-controller='PulseCtrl'>
-      <div class="header-filter" style="position: absolute; height: 100%; background-color: #73bbc9; padding-right: 3px" >
-        bla
-      </div>
+
       <div style="position: relative; background: url('{% static "/images/backgrounds/header.svg" %}') no-repeat left top; background-size: cover; width:100%">
 
       <div class='container' style="height: 300px;">
@@ -32,12 +30,12 @@
           </button>
           <div class='navbar-brand' id="logo" style="align-content: center">
             <a ui-sref="publications.all" ui-sref-opts="{reload: true}">
-              <img style="margin-left: 5rem;margin-top: 2rem; width: 15rem" src='{% static "/images/logo_bibe.svg" %}'>
+              <img style="margin-left: 5rem;margin-top: 1rem; width: 15rem" src='{% static "/images/logo_bibe.svg" %}'>
             </a>
           </div>
         </div>
 
-        <div class="collapse navbar-collapse" style="margin-top: 5px">
+        <div class="collapse navbar-collapse" style="margin-top: 5px; margin-left:0">
 
 
           <ul class="nav navbar-nav">
@@ -72,7 +70,7 @@
 
           </ul>
 
-          <ul style='margin-left: 10px' class="nav navbar-nav navbar-right">
+          <ul style='margin-right: -25px' class="nav navbar-nav navbar-right">
             <li ng-if="!cart.isEmpty()" ng-cloak>
               <a ng-click="openDownloadCartModal()" class="force-pointer">(<span ng-bind="cart.count()"> </span>) <span translate="modal.cart.open"></span></a>
             </li>
@@ -132,7 +130,6 @@
                 <div style="float: left; margin-right: 10px" ng-class="{'active': language=='de_DE'}"><a ng-click='changeLanguage("de_DE")' >DE</a></div>
                 <div style="float: left;" ng-class="{'active': language=='fr_FR'}"><a ng-click='changeLanguage("fr_FR")' >FR</a></div>
               </div>
-              <div>
             <div id='search-wrapper'>
               <form role="form" ng-submit="search(searchquery)">
                 <div class="input-group">
@@ -162,7 +159,7 @@
 
         </div>
 
-        <div class="menu-wrapper">
+        <div class="menu-wrapper" ng-class="{'active': showMenu}">
           <div class="inner">
             <div class="row">
               <div class="col-xs-6">
