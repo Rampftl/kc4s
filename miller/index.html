@@ -5,15 +5,12 @@
   <div id="footer" ng-class='state'>
     <div class='container'>
       <div class="row">
-        <div class='col-sm-12'>
-          <ul class="nav navbar-nav">
-            <li ui-sref-active="active"><a href="/" translate='footer.home'></a>
-            </li>
-            <li ui-sref-active="active"><a href ui-sref='page({name:"terms-of-use"})' translate='footer.termsofservice'></a>
-            </li>
-            <li ui-sref-active="active"><a href ui-sref='page({name:"guide-for-authors"})' translate='footer.guideforauthors'></a>
-            </li>
-          </ul>
+        <div class='col-sm-12' style="background-color: #f26951">
+          <div class="col-sm-8" style="height:80px;padding-top:20px" >
+            <div ui-sref-active="active" class="text-right"><a href ui-sref='page({name:"terms-of-use"})' translate='footer.termsofservice'></a>
+            </div>
+          </div>
+          <div class="col-sm-3 text-right color-white" style="height:80px;padding-top:20px">BIBE@CELL.LU&nbsp;&nbsp;&nbsp;&nbsp;&copy; BIBE 2021</div>
         </div>
       </div>
     </div>
