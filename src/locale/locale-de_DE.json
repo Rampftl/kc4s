@@ -490,5 +490,6 @@
     "headline.contact": "KONTAKT",
     "button.add.project": "Projekt hinzufügen",
     "header.map.label": "Karte",
-    "header.projects.label": "Projekte"
+    "header.projects.label": "Projekte",
+    "choose.category": "KATEGORIE WÄHLEN"
 }
