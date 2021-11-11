@@ -83,7 +83,7 @@
             {% endverbatim %}
             <!-- <li class="dropdown" ng-class="{active: state.includes('me') || state.includes('draft')}"> -->
 
-              <a bs-dropdown placement='bottom-right' aria-haspopup="true" aria-expanded="false" style='position:relative; padding-right: 30px'>
+              <a bs-dropdown placement='bottom-right' aria-haspopup="true" aria-expanded="false" style='position:relative; padding-right: 30px' onclick="moveTopDescription()">
                 <span class='dropdown-label username'>{{user.username}}<span style='position:absolute; right:5px; top:0' class='icon icon-plus'></span></span>
               </a>
 
@@ -282,6 +282,12 @@
         //evaluateFloating();
       })
 
+      function moveTopDescription() {
+        console.log("jojo");
+        var topDescriptionElement = $('.top-description');
+        topDescriptionElement.toggleClass('menu-open');
+      }
+
       function evaluateFloating(e){
           /*st = _windox.scrollTop();
           navbar_offset = Math.max(floatinglimit - st, 0);*/
@@ -380,7 +386,7 @@
               },
               {
                 label: 'organisation',
-                relevance: 'primary',
+                relevance: 'off',
                 filters:  {
                   category:'organisation'
                 },
@@ -402,7 +408,7 @@
               },
               {
                 label: 'SDG',
-                relevance: 'primary',
+                relevance: 'off',
                 filters:  {
                   category: 'SDG'
                 },
