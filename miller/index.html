@@ -129,7 +129,8 @@
                 <span class='dropdown-label'>{% verbatim %}<span>{{language|substr:0:2}}</span>{% endverbatim %}<span style='position:absolute; right:5px; top:0' class='icon icon-arrow-down-circle'></span></span>
               </a>-->
 
-              <div class="lang" style="margin-right: 50px">
+              <div class="lang text-right">
+                <div style="float: left; width:55px">&nbsp;</div>
                 <div style="float: left; margin-right: 10px" ng-class="{'active': language=='en_US'}"><a ng-click='changeLanguage("en_US")' >EN</a></div>
                 <div style="float: left; margin-right: 10px" ng-class="{'active': language=='de_DE'}"><a ng-click='changeLanguage("de_DE")' >DE</a></div>
                 <div style="float: left;" ng-class="{'active': language=='fr_FR'}"><a ng-click='changeLanguage("fr_FR")' >FR</a></div>
