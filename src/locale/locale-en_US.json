@@ -464,9 +464,9 @@
     "organisation": "Organization",
     "articletype": "Categories",
     "copyright.checkbox.label": "I am the copyright owner of the picture or have the permission of the copyright owner to share the picture",
-    "copyright.checkbox.text": "If you did not take the picture yourself, it most likely is protected by copyright and you are not allowed to upload it. Alternatively, you can upload a creative commons picture. For more information on this, you can check our <a href='https://www.aktioun-nohaltegkeet.lu/guide-for-authors' target='_blank'>guide for authors.</a>",
+    "copyright.checkbox.text": "If you did not take the picture yourself, it most likely is protected by copyright and you are not allowed to upload it. Alternatively, you can upload a creative commons picture. For more information on this, you can check our <a href='https://www.bibe.lu/guide-for-authors' target='_blank'>guide for authors.</a>",
     "write": "Write",
-    "writing.help": "We recommend new authors to have a look at our <a href='https://www.aktioun-nohaltegkeet.lu/guide-for-authors' target='_blank'>guide for authors</a>. It contains useful information that can help you create and structure your article.",
+    "writing.help": "We recommend new authors to have a look at our <a href='https://www.bibe.lu/guide-for-authors' target='_blank'>guide for authors</a>. It contains useful information that can help you create and structure your article.",
     "state.publications.challenges.label": "Challenges",
     "map.coordinates.remove": "Remove from map",
     "map.address.button": "Use an address",
@@ -491,5 +491,8 @@
     "button.add.project": "Add your project",
     "header.map.label": "Map",
     "header.projects.label": "Projects",
-    "choose.category": "CHOOSE CATEGORY"
+    "choose.category": "CHOOSE CATEGORY",
+    "headline.partners": "PARTNERS",
+    "logout":"logout"
+
 }

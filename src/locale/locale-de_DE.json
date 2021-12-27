@@ -464,9 +464,9 @@
     "organisation": "Organisation",
     "articletype": "Kategorien",
     "copyright.checkbox.label": "Ich bin Urheber des Bildes oder habe die Erlaubnis des Urhebers das Bild zu teilen",
-    "copyright.checkbox.text": "Falls Sie das Bild nicht selbst aufgenommen haben, ist es wahrscheinlich durch das Urheberrecht gesch\u00fctzt und es ist Ihnen nicht erlaubt das Bild hochzuladen. Alternativ k\u00f6nnen Sie Creative Commons Bilder verwenden. Mehr Informationen dazu finden Sie in unserem <a href='https://www.aktioun-nohaltegkeet.lu/guide-for-authors' target='_blank'>Handbuch f\u00fcr Autoren*innen</a>.",
+    "copyright.checkbox.text": "Falls Sie das Bild nicht selbst aufgenommen haben, ist es wahrscheinlich durch das Urheberrecht gesch\u00fctzt und es ist Ihnen nicht erlaubt das Bild hochzuladen. Alternativ k\u00f6nnen Sie Creative Commons Bilder verwenden. Mehr Informationen dazu finden Sie in unserem <a href='https://www.bibe.lu/guide-for-authors' target='_blank'>Handbuch f\u00fcr Autoren*innen</a>.",
     "write": "Schreiben",
-    "writing.help": "Wir empfehlen neuen Autoren einen Blick in unser <a href='https://www.aktioun-nohaltegkeet.lu/guide-for-authors' target='_blank'>Handbuch f\u00fcr Autoren*innen</a>. Dort finden Sie n\u00fctzliche Informationen zur Erstellung und Strukturierung Ihres Artikels. ",
+    "writing.help": "Wir empfehlen neuen Autoren einen Blick in unser <a href='https://www.bibe.lu/guide-for-authors' target='_blank'>Handbuch f\u00fcr Autoren*innen</a>. Dort finden Sie n\u00fctzliche Informationen zur Erstellung und Strukturierung Ihres Artikels. ",
     "state.publications.challenges.label": "Herausforderungen",
     "map.coordinates.remove": "Von Karte entfernen",
     "map.address.button": "Adresse verwenden",
@@ -491,5 +491,8 @@
     "button.add.project": "Projekt hinzufügen",
     "header.map.label": "Karte",
     "header.projects.label": "Projekte",
-    "choose.category": "KATEGORIE WÄHLEN"
+    "choose.category": "KATEGORIE WÄHLEN",
+    "headline.partners": "PARTNER",
+    "logout":"logout"
+
 }

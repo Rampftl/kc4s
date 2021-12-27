@@ -464,9 +464,9 @@
     "organisation": "Organisation",
     "articletype": "Categories",
     "copyright.checkbox.label": "I am the copyright owner of the picture or have the permission of the copyright owner to share it",
-    "copyright.checkbox.text": "If you did not take the picture yourself but got it from another source, it most likely is protected by copyright and you cannot upload it. Alternatively, you can upload a creative commons picture. We recommend using CC Search (link: <a href='https://ccsearch.creativecommons.org' target='_blank'>https://ccsearch.creativecommons.org/</a>) to find creative commons pictures as it automatically provides the correct attribution. For more information on this, you can have look at the <a href='https://www.aktioun-nohaltegkeet.lu/guide-for-authors' target='_blank'>user\u2019s guide</a>.",
-    "write": "",
-    "writing.help": "Si vous avez des questions ou rencontrez des probl\u00e8mes lors de la cr\u00e9ation de votre article, vous trouverez des informations utiles dans notre <a href='https://www.aktioun-nohaltegkeet.lu/guide-for-authors' target='_blank'>guide pour auteur</a>",
+    "copyright.checkbox.text": "If you did not take the picture yourself but got it from another source, it most likely is protected by copyright and you cannot upload it. Alternatively, you can upload a creative commons picture. We recommend using CC Search (link: <a href='https://ccsearch.creativecommons.org' target='_blank'>https://ccsearch.creativecommons.org/</a>) to find creative commons pictures as it automatically provides the correct attribution. For more information on this, you can have look at the <a href='https://www.bibe.lu/guide-for-authors' target='_blank'>user\u2019s guide</a>.",
+    "write": "écrire",
+    "writing.help": "Si vous avez des questions ou rencontrez des probl\u00e8mes lors de la cr\u00e9ation de votre article, vous trouverez des informations utiles dans notre <a href='https://www.bibe.lu/guide-for-authors' target='_blank'>guide pour auteur</a>",
     "state.publications.challenges.label": "D\u00e9fis",
     "map.coordinates.remove": "Remove from map",
     "map.address.button": "Use an address",
@@ -491,5 +491,8 @@
     "button.add.project": "Ajouter un projet",
     "header.map.label": "Carte",
     "header.projects.label": "Projets",
-    "choose.category": "CHOISIR CATÉGORIE"
+    "choose.category": "CHOISIR CATÉGORIE",
+    "headline.partners": "PARTENAIRES",
+    "upload": "télécharger",
+    "logout":"se déconnecter"
 }

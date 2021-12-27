@@ -7,11 +7,13 @@
       <div class="row">
 
         <div class='col-sm-12' style="background-color: #f26951">
-          <div class="col-sm-8" style="height:80px;padding-top:20px" >
+          <div class="col-sm-7" style="height:80px;padding-top:20px" >
             <div ui-sref-active="active" class="text-right"><a class='footer' href ui-sref='page({name:"terms-of-use"})' translate='footer.termsofservice'></a>
             </div>
           </div>
-          <div class="col-sm-3 text-right color-white" style="height:80px;padding-top:20px">BIBE@CELL.LU&nbsp;&nbsp;&nbsp;&nbsp;&copy; BIBE 2021</div>
+          <div class="col-sm-3 text-right color-white" style="height:80px;padding-top:20px">BIBE@CELL.LU&nbsp;&nbsp;&nbsp;&nbsp;&copy; BIBE 2021 </div>
+          <div class="col-sm-1 text-right" style="padding-top: 15px"><img width='100px' src='{% static "images/CELL_whitebkgrnd.png" %}'/></div>
+
         </div>
       </div>
     </div>
@@ -49,6 +51,7 @@
             <li ui-sref-active="active"><a href ui-sref="publications.all" ui-sref-opts="{reload: true}" translate="headline.home"></a></li>
             <li ui-sref-active="active"><a href ui-sref='map' translate="headline.map"></a></li>
             <li ui-sref-active="active"><a href ui-sref='page({name:"about"})' translate="headline.about"></a></li>
+            <li ui-sref-active="active"><a href ui-sref='page({name:"partners"})' translate="headline.partners"></a></li>
             <li ui-sref-active="active"><a href ui-sref='page({name:"contact"})' translate="headline.contact"></a></li>
             <!-- <li ui-sref-active="active"><a href ui-sref='authors' translate="headline.authors"></a></li> -->
 <!--            <li ng-class="{active: state.includes('blog')}"><a ui-sref="blog.all" translate="state.blog.all.title"></a></li>-->
@@ -107,7 +110,7 @@
                   <a ui-sref="notifications.activities" translate='button.more.notification'></a>
                 </li>
                 <!-- <li ui-sref-active="active"><a ui-sref="profile({username:user.username})" translate='headline.edit.your.information'></a></li> -->
-                <li><a href='{% url "logout_view" %}'>log out</a></li>
+                <li><a href='{% url "logout_view" %}' translate="logout">log out</a></li>
                 {% if user.is_staff %}
                 <li><a href='{% url "admin:index" %}'>admin</a></li>
                 {% endif %}
