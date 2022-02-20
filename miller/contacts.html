@@ -683,6 +683,8 @@
 </script>
 <div class="container-fluid" style="margin: 50px">
   <div class="row">
+    <div class="col-xs-offset-2 col-xs-8">
+  <div class="row">
     <div class="col" style="margin-bottom: 30px;">
       <h1 translate="headline.about">{% lookupmulti locale "propose.a.project" language %}</h1>
       {% if form.errors %}
@@ -756,16 +758,19 @@
         {% csrf_token %}
       </div>
     </div>
+    <br/><br/>
     {% if next %}
-    <a class="btn btn-primary" href='{{ next }}' type="submit" style="font-size: x-large">
+    <a class="btn btn-primary" href='{{ next }}' type="submit" style="font-size: x-large;text-transform: uppercase">
       <span>{% lookupmulti locale "back" language %}</span>
     </a>
     {% endif %}
-    <button class="btn btn-primary" type="submit" style="font-size: x-large">
+    <button class="btn btn-secondary" type="submit" style="font-size: x-large; background-color: #f26951; text-transform: uppercase; color: white">
       <span>{% lookupmulti locale "send.message" language %}</span>
     </button>
     </div>
   </form>
+  </div>
+</div>
 </div>
 <div id="footer" ng-class='state'>
   <div class='container'>
